@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '9#@ga^*l^t+%k*r3@6u@i3@=hv3u9==tt1w(b&@!wk5t(vu1kx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.duliduo.com', '127.0.0.1']
 
 # Application definition
 
@@ -119,6 +119,8 @@ STATIC_URL = '/static/'
 # 媒体文件地址
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 
 # SMTP服务器，改为你的邮箱的smtp!
 EMAIL_HOST = 'smtp.163.com'
